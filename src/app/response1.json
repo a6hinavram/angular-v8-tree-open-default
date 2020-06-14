@@ -1,0 +1,54 @@
+{
+  "field_type": "popup",
+  "popup_level_type": "multi",
+  "popup_level_count": "3",
+  "label": "V5 Team",
+  "variable_count": "5",
+  "key": "V5",
+  "_key": "Team",
+  "required": false,
+  "units": "",
+  "sampling_plan": "0",
+  "questions_to_ask_count": 3,
+  "questions_order": [
+    "What feature was off quality?",
+    "What was the quality problem?",
+    "What was the root cause of off-quality (why-why-why-why-why)"
+  ],
+  "options": [
+    {
+      "level": 0,
+      "popup_code": "10",
+      "description": "Mixing",
+      "options": [
+        {
+          "level": 1,
+          "popup_code": "10",
+          "description": "Off Color",
+          "options": [
+            {
+              "level": 2,
+              "popup_code": "10",
+              "description": "Wrong tint was added"
+            }
+          ],
+        },
+        {
+          "level": 1,
+          "popup_code": "20",
+          "description": "Odor"
+        },
+        {
+          "level": 1,
+          "popup_code": "30",
+          "description": "Formulation"
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "popup_code": "20",
+      "description": "Cooking",
+    }
+  ]
+}

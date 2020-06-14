@@ -1,0 +1,690 @@
+{
+	"status": "success",
+	"filedata": [{
+		"Id": "1",
+		"label": "V1 Date",
+		"_key": "Date",
+		"key": "V1",
+		"variable_name": "V1 Date",
+		"variable_count": "1",
+		"variable_field_name": "Date",
+		"required": false,
+		"data_type": "text",
+		"field_type": "text",
+		"_field_type": "qwDateTime",
+		"units": "",
+		"sampling_plan": "0"
+	}, {
+		"Id": "2",
+		"label": "V2 Time",
+		"_key": "Time",
+		"key": "V2",
+		"variable_name": "V2 Time",
+		"variable_count": "2",
+		"variable_field_name": "Time",
+		"required": false,
+		"data_type": "text",
+		"field_type": "text",
+		"_field_type": "qwDateTime",
+		"units": "",
+		"sampling_plan": "0"
+	}, {
+		"Id": "3",
+		"label": "V3 Product",
+		"variable_name": "V3 Product",
+		"_key": "Product",
+		"key": "V3",
+		"variable_count": "3",
+		"variable_field_name": "Product",
+		"required": false,
+		"data_type": "popup",
+		"field_type": "popup",
+		"_field_type": "qwPopup",
+		"units": "",
+		"sampling_plan": "0",
+		"children": [{
+			"question": "What Product is it?",
+			"opts": ["10-Chocolate chip                ", "20-Chocolate Mint                ", "30-Oatmeal 16oz                  ", "40-Oatmeal Raisin 16oz           "]
+		}],
+		"popup_type": "single"
+	}, {
+		"Id": "6",
+		"label": "V6 What was the root cause?",
+		"variable_name": "V6 What was the root cause?",
+		"_key": "Whatwastherootcause",
+		"key": "V6",
+		"variable_count": "6",
+		"variable_field_name": "What was the root cause?",
+		"required": false,
+		"data_type": "popup",
+		"field_type": "popup",
+		"_field_type": "qwPopup",
+		"units": "",
+		"sampling_plan": "0",
+		"children": {
+			"name": "What feature was off quality?",
+			"option_type": "Question",
+			"children": [{
+				"name": "Mixing                                                      ",
+				"popup_code": "10",
+				"option_type": "opt",
+				"popup_level_code": "10",
+				"children": [{
+					"name": "What was the quality problem?",
+					"option_type": "Question",
+					"children": [{
+						"name": "Off Color                                                   ",
+						"popup_code": "10",
+						"option_type": "opt",
+						"popup_level_code": "1010",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "1010",
+							"children": [{
+								"name": "Wrong tint was added                                        ",
+								"popup_code": "10",
+								"popup_level_code": "101010"
+							}, {
+								"name": "Not mixed adequately...mixed colors                         ",
+								"popup_code": "20",
+								"popup_level_code": "101020"
+							}, {
+								"name": "Other...please specify                                      ",
+								"popup_code": "99",
+								"popup_level_code": "101099"
+							}]
+						}]
+					}, {
+						"name": "Off Color                                                   ",
+						"popup_code": "10",
+						"option_type": "opt",
+						"popup_level_code": "1010",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "1010",
+							"children": [{
+								"name": "Wrong tint was added                                        ",
+								"popup_code": "10",
+								"popup_level_code": "101010"
+							}, {
+								"name": "Not mixed adequately...mixed colors                         ",
+								"popup_code": "20",
+								"popup_level_code": "101020"
+							}, {
+								"name": "Other...please specify                                      ",
+								"popup_code": "99",
+								"popup_level_code": "101099"
+							}]
+						}]
+					}]
+				}, {
+					"name": "What was the quality problem?",
+					"option_type": "Question",
+					"children": [{
+						"name": "Odor                                                        ",
+						"popup_code": "20",
+						"option_type": "opt",
+						"popup_level_code": "1020",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "1020",
+							"children": [{
+								"name": "Perfume not added or not right quantity                     ",
+								"popup_code": "10",
+								"popup_level_code": "102010"
+							}, {
+								"name": "Wrong Type of perfume added                                 ",
+								"popup_code": "20",
+								"popup_level_code": "102020"
+							}, {
+								"name": "Wrong amount of perfume added                               ",
+								"popup_code": "30",
+								"popup_level_code": "102030"
+							}, {
+								"name": "Other...please specify                                      ",
+								"popup_code": "99",
+								"popup_level_code": "102099"
+							}]
+						}]
+					}, {
+						"name": "Odor                                                        ",
+						"popup_code": "20",
+						"option_type": "opt",
+						"popup_level_code": "1020",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "1020",
+							"children": [{
+								"name": "Perfume not added or not right quantity                     ",
+								"popup_code": "10",
+								"popup_level_code": "102010"
+							}, {
+								"name": "Wrong Type of perfume added                                 ",
+								"popup_code": "20",
+								"popup_level_code": "102020"
+							}, {
+								"name": "Wrong amount of perfume added                               ",
+								"popup_code": "30",
+								"popup_level_code": "102030"
+							}, {
+								"name": "Other...please specify                                      ",
+								"popup_code": "99",
+								"popup_level_code": "102099"
+							}]
+						}]
+					}]
+				}, {
+					"name": "What was the quality problem?",
+					"option_type": "Question",
+					"children": [{
+						"name": "Formulation                                                 ",
+						"popup_code": "30",
+						"option_type": "opt",
+						"popup_level_code": "1030",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "1030",
+							"children": [{
+								"name": "Wrong Formula used                                          ",
+								"popup_code": "10",
+								"popup_level_code": "103010"
+							}, {
+								"name": "Thin - too much water                                       ",
+								"popup_code": "20",
+								"popup_level_code": "103020"
+							}, {
+								"name": "Thin - too little material                                  ",
+								"popup_code": "30",
+								"popup_level_code": "103030"
+							}, {
+								"name": "Thick - too liitle water                                    ",
+								"popup_code": "40",
+								"popup_level_code": "103040"
+							}, {
+								"name": "Other...please describe                                     ",
+								"popup_code": "99",
+								"popup_level_code": "103099"
+							}]
+						}]
+					}, {
+						"name": "Formulation                                                 ",
+						"popup_code": "30",
+						"option_type": "opt",
+						"popup_level_code": "1030",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "1030",
+							"children": [{
+								"name": "Wrong Formula used                                          ",
+								"popup_code": "10",
+								"popup_level_code": "103010"
+							}, {
+								"name": "Thin - too much water                                       ",
+								"popup_code": "20",
+								"popup_level_code": "103020"
+							}, {
+								"name": "Thin - too little material                                  ",
+								"popup_code": "30",
+								"popup_level_code": "103030"
+							}, {
+								"name": "Thick - too liitle water                                    ",
+								"popup_code": "40",
+								"popup_level_code": "103040"
+							}, {
+								"name": "Other...please describe                                     ",
+								"popup_code": "99",
+								"popup_level_code": "103099"
+							}]
+						}]
+					}]
+				}]
+			}, {
+				"name": "Cookie                                                      ",
+				"popup_code": "20",
+				"option_type": "opt",
+				"popup_level_code": "20",
+				"children": [{
+					"name": "What was the quality problem?",
+					"option_type": "Question",
+					"children": [{
+						"name": "Wrong size, shape or thickness                              ",
+						"popup_code": "10",
+						"option_type": "opt",
+						"popup_level_code": "2010",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "2010",
+							"children": [{
+								"name": "Poor forming due to clogged nozzles                         ",
+								"popup_code": "10",
+								"popup_level_code": "201010"
+							}, {
+								"name": "Poor forming due to wrong temperature                       ",
+								"popup_code": "20",
+								"popup_level_code": "201020"
+							}, {
+								"name": "Poor forming due to wrong conveyor belt setup or speed      ",
+								"popup_code": "30",
+								"popup_level_code": "201030"
+							}, {
+								"name": "Other...please specify                                      ",
+								"popup_code": "99",
+								"popup_level_code": "201099"
+							}]
+						}]
+					}, {
+						"name": "Wrong size, shape or thickness                              ",
+						"popup_code": "10",
+						"option_type": "opt",
+						"popup_level_code": "2010",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "2010",
+							"children": [{
+								"name": "Poor forming due to clogged nozzles                         ",
+								"popup_code": "10",
+								"popup_level_code": "201010"
+							}, {
+								"name": "Poor forming due to wrong temperature                       ",
+								"popup_code": "20",
+								"popup_level_code": "201020"
+							}, {
+								"name": "Poor forming due to wrong conveyor belt setup or speed      ",
+								"popup_code": "30",
+								"popup_level_code": "201030"
+							}, {
+								"name": "Other...please specify                                      ",
+								"popup_code": "99",
+								"popup_level_code": "201099"
+							}]
+						}]
+					}]
+				}, {
+					"name": "What was the quality problem?",
+					"option_type": "Question",
+					"children": [{
+						"name": "Contamination                                               ",
+						"popup_code": "20",
+						"option_type": "opt",
+						"popup_level_code": "2020",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "2020",
+							"children": [{
+								"name": "Wrong or too much processing aids used on equipment         ",
+								"popup_code": "10",
+								"popup_level_code": "202010"
+							}, {
+								"name": "Dirty Equipment....needs cleaning                           ",
+								"popup_code": "20",
+								"popup_level_code": "202020"
+							}, {
+								"name": "Other...please describe                                     ",
+								"popup_code": "99",
+								"popup_level_code": "202099"
+							}]
+						}]
+					}, {
+						"name": "Contamination                                               ",
+						"popup_code": "20",
+						"option_type": "opt",
+						"popup_level_code": "2020",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "2020",
+							"children": [{
+								"name": "Wrong or too much processing aids used on equipment         ",
+								"popup_code": "10",
+								"popup_level_code": "202010"
+							}, {
+								"name": "Dirty Equipment....needs cleaning                           ",
+								"popup_code": "20",
+								"popup_level_code": "202020"
+							}, {
+								"name": "Other...please describe                                     ",
+								"popup_code": "99",
+								"popup_level_code": "202099"
+							}]
+						}]
+					}]
+				}]
+			}, {
+				"name": "Wrapper                                                     ",
+				"popup_code": "30",
+				"option_type": "opt",
+				"popup_level_code": "30",
+				"children": [{
+					"name": "What was the quality problem?",
+					"option_type": "Question",
+					"children": [{
+						"name": "Not square                                                  ",
+						"popup_code": "20",
+						"option_type": "opt",
+						"popup_level_code": "3020",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "20",
+							"popup_level_code": "3020",
+							"children": [{
+								"name": "material not tracked correctly                              ",
+								"popup_code": "20",
+								"popup_level_code": "302020"
+							}, {
+								"name": "not properly sealed                                         ",
+								"popup_code": "40",
+								"popup_level_code": "302040"
+							}, {
+								"name": "other                                                       ",
+								"popup_code": "99",
+								"popup_level_code": "302099"
+							}]
+						}]
+					}, {
+						"name": "Not square                                                  ",
+						"popup_code": "20",
+						"option_type": "opt",
+						"popup_level_code": "3020",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "20",
+							"popup_level_code": "3020",
+							"children": [{
+								"name": "material not tracked correctly                              ",
+								"popup_code": "20",
+								"popup_level_code": "302020"
+							}, {
+								"name": "not properly sealed                                         ",
+								"popup_code": "40",
+								"popup_level_code": "302040"
+							}, {
+								"name": "other                                                       ",
+								"popup_code": "99",
+								"popup_level_code": "302099"
+							}]
+						}]
+					}]
+				}]
+			}, {
+				"name": "Cartons                                                     ",
+				"popup_code": "50",
+				"option_type": "opt",
+				"popup_level_code": "50",
+				"children": [{
+					"name": "What was the quality problem?",
+					"option_type": "Question",
+					"children": [{
+						"name": "not sealed properly                                         ",
+						"popup_code": "20",
+						"option_type": "opt",
+						"popup_level_code": "5020",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "20",
+							"popup_level_code": "5020",
+							"children": [{
+								"name": "Adjust tension to sealer                                    ",
+								"popup_code": "20",
+								"popup_level_code": "502020"
+							}, {
+								"name": "Wrong Case                                                  ",
+								"popup_code": "60",
+								"popup_level_code": "502060"
+							}, {
+								"name": "Other...please describe                                     ",
+								"popup_code": "99",
+								"popup_level_code": "502099"
+							}]
+						}]
+					}, {
+						"name": "not sealed properly                                         ",
+						"popup_code": "20",
+						"option_type": "opt",
+						"popup_level_code": "5020",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "20",
+							"popup_level_code": "5020",
+							"children": [{
+								"name": "Adjust tension to sealer                                    ",
+								"popup_code": "20",
+								"popup_level_code": "502020"
+							}, {
+								"name": "Wrong Case                                                  ",
+								"popup_code": "60",
+								"popup_level_code": "502060"
+							}, {
+								"name": "Other...please describe                                     ",
+								"popup_code": "99",
+								"popup_level_code": "502099"
+							}]
+						}]
+					}]
+				}, {
+					"name": "What was the quality problem?",
+					"option_type": "Question",
+					"children": [{
+						"name": "Wrong Carton                                                ",
+						"popup_code": "30",
+						"option_type": "opt",
+						"popup_level_code": "5030",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "5030",
+							"children": [{
+								"name": "Line cleanance not followed                                 ",
+								"popup_code": "10",
+								"popup_level_code": "503010"
+							}, {
+								"name": "Not coded properly                                          ",
+								"popup_code": "20",
+								"popup_level_code": "503020"
+							}, {
+								"name": "Other...please describe                                     ",
+								"popup_code": "99",
+								"popup_level_code": "503099"
+							}]
+						}]
+					}, {
+						"name": "Wrong Carton                                                ",
+						"popup_code": "30",
+						"option_type": "opt",
+						"popup_level_code": "5030",
+						"children": [{
+							"name": "What was the root cause of off-quality (why-why-why-why-why)",
+							"option_type": "Question",
+							"popup_code": "10",
+							"popup_level_code": "5030",
+							"children": [{
+								"name": "Line cleanance not followed                                 ",
+								"popup_code": "10",
+								"popup_level_code": "503010"
+							}, {
+								"name": "Not coded properly                                          ",
+								"popup_code": "20",
+								"popup_level_code": "503020"
+							}, {
+								"name": "Other...please describe                                     ",
+								"popup_code": "99",
+								"popup_level_code": "503099"
+							}]
+						}]
+					}]
+				}]
+			}]
+		},
+		"popup_type": "multi"
+	}, {
+		"Id": "7",
+		"label": "V7 How critical and continuous was this problem?",
+		"variable_name": "V7 How critical and continuous was this problem?",
+		"_key": "Howcriticalandcontinuouswasthisproblem",
+		"key": "V7",
+		"variable_count": "7",
+		"variable_field_name": "How critical and continuous was this problem?",
+		"required": false,
+		"data_type": "popup",
+		"field_type": "popup",
+		"_field_type": "qwPopup",
+		"units": "",
+		"sampling_plan": "0",
+		"children": [{
+			"question": "How critical was this off-quality?",
+			"opts": ["10-Continuous & Unacceptable...more than 1 found               ", "20-Random & Unacceptable...only 1 or few found                 ", "30-Continuous & Marginal...more than 1 found                   ", "40-Random & Marginal...only 1 or few found                     ", "50-Special Cause (unique & non-repeating) & Unacceptable       ", "60-Special Cause (unique & non-repeating) & Marginal           ", "99-Other...please specify                                      "]
+		}],
+		"popup_type": "single"
+	}, {
+		"Id": "8",
+		"label": "V8 # of_off quality_products found?",
+		"_key": "of_offquality_productsfound",
+		"key": "V8",
+		"variable_name": "V8 # of_off quality_products found?",
+		"variable_count": "8",
+		"variable_field_name": "# of_off quality_products found?",
+		"required": false,
+		"data_type": "numeric",
+		"field_type": "numeric",
+		"_field_type": "qwNumeric",
+		"format": "##0",
+		"units": "",
+		"sampling_plan": "0",
+		"maximum": "999",
+		"usl": "Calc ",
+		"ucl": "Calc ",
+		"uwl": "Calc ",
+		"tgt": "Calc ",
+		"lwl": "Calc ",
+		"lcl": "Calc ",
+		"lsl": "Calc ",
+		"minimum": "-99"
+	}, {
+		"Id": "9",
+		"label": "V9 Where was this problem found?",
+		"variable_name": "V9 Where was this problem found?",
+		"_key": "Wherewasthisproblemfound",
+		"key": "V9",
+		"variable_count": "9",
+		"variable_field_name": "Where was this problem found?",
+		"required": false,
+		"data_type": "popup",
+		"field_type": "popup",
+		"_field_type": "qwPopup",
+		"units": "",
+		"sampling_plan": "0",
+		"children": [{
+			"question": "Where was off quality found?",
+			"opts": ["10-During unloading, unwrapping or inspection of the material  ", "20-During batch processing                                     ", "30-As cookies are made                                         ", "40-During baking                                               ", "50-During cooling                                              ", "60-During wrapping                                             ", "70-During cartoning                                            ", "80-Carton sealing & coding                                     ", "90-Palletizing                                                 ", "91-During storage and handling                                 ", "92-During loading of transportation trucks                     ", "93-Returns from customers                                      ", "99-Other...please specify                                      "]
+		}],
+		"popup_type": "single"
+	}, {
+		"Id": "10",
+		"label": "V10 When was this problem found?",
+		"variable_name": "V10 When was this problem found?",
+		"_key": "Whenwasthisproblemfound",
+		"key": "V10",
+		"variable_count": "10",
+		"variable_field_name": "When was this problem found?",
+		"required": false,
+		"data_type": "popup",
+		"field_type": "popup",
+		"_field_type": "qwPopup",
+		"units": "",
+		"sampling_plan": "0",
+		"children": [{
+			"question": "What was the line condition at the time?",
+			"opts": ["10-During normal run                                           ", "20-Startup after an extended shutdown (>20 minutes)            ", "30-Startup after a normal stop (<20 minutes duration)          ", "31-After an electrical adjustment/maintenance/replacement      ", "32-After mechanical adjustment/maintenance / replacement       ", "33-While the line was off centerline or during adjustment      ", "34-During or after experimental operation (EO or Test)         ", "40-During or after a tape splice                               ", "50-During or after a wrapper splice                            ", "60-After the introduction of a new lot of wrapper material     ", "70-After the introduction of a new lot of tape                 ", "80-After the introduction of a new lot of cartons              ", "90-During a hopper fill                                        ", "91-Batch specific (not a problem in the last batch)            ", "92-During a facility outage (water, steam, gas, Air cond, etc) ", "99-Other...please specify here                                 "]
+		}],
+		"popup_type": "single"
+	}, {
+		"Id": "11",
+		"label": "V11 What corrective action did you take?",
+		"_key": "Whatcorrectiveactiondidyoutake",
+		"key": "V11",
+		"variable_name": "V11 What corrective action did you take?",
+		"variable_count": "11",
+		"variable_field_name": "What corrective action did you take?",
+		"required": false,
+		"data_type": "text",
+		"field_type": "text",
+		"_field_type": "qwText",
+		"units": "",
+		"sampling_plan": "0"
+	}, {
+		"Id": "14",
+		"label": "V14 What shift was the_problem found on?",
+		"variable_name": "V14 What shift was the_problem found on?",
+		"_key": "Whatshiftwasthe_problemfoundon",
+		"key": "V14",
+		"variable_count": "14",
+		"variable_field_name": "What shift was the_problem found on?",
+		"required": false,
+		"data_type": "popup",
+		"field_type": "popup",
+		"_field_type": "qwPopup",
+		"units": "",
+		"sampling_plan": "0",
+		"children": [{
+			"question": "What Shift is it?",
+			"opts": ["10-7:30a to 3:30p ", "20-3:30p to 11:30p", "30-11:30p to 7:30a"]
+		}],
+		"popup_type": "single"
+	}, {
+		"Id": "15",
+		"label": "V15 What team_found the_problem?",
+		"variable_name": "V15 What team_found the_problem?",
+		"_key": "Whatteam_foundthe_problem",
+		"key": "V15",
+		"variable_count": "15",
+		"variable_field_name": "What team_found the_problem?",
+		"required": false,
+		"data_type": "popup",
+		"field_type": "popup",
+		"_field_type": "qwPopup",
+		"units": "",
+		"sampling_plan": "0",
+		"children": [{
+			"question": "What Team is it?",
+			"opts": ["10-A Team", "20-B Team", "30-C Team", "40-D Team"]
+		}],
+		"popup_type": "single"
+	}, {
+		"Id": "16",
+		"label": "V16 Any other_comments?",
+		"_key": "Anyother_comments",
+		"key": "V16",
+		"variable_name": "V16 Any other_comments?",
+		"variable_count": "16",
+		"variable_field_name": "Any other_comments?",
+		"required": false,
+		"data_type": "text",
+		"field_type": "text",
+		"_field_type": "qwText",
+		"units": "",
+		"sampling_plan": "0"
+	}]
+}
